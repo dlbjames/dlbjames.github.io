@@ -69,7 +69,7 @@ span { color: #3579F6; }
     background-color: white;
     border-radius: 5px;
     text-align: center;
-    max-width: 500px;
+    max-width: 60%;
     transition: .2s;
     margin: auto;
 }
@@ -81,19 +81,18 @@ span { color: #3579F6; }
 
 .card img {
     border-radius: 5px 5px 0 0;
-    max-width: 200px;
+    min-width: 100%;
 }
 
 .card div {
-    width: 100%;
-    height: 350px;
+    min-height: 300px;
     overflow: hidden;
 }
 
 .card div img {
-    object-fit: contain;
-    overflow: hidden;
+    object-fit: fill;
     max-width: 100%;
+    max-height: 550px;
 }
 
 .card button {
@@ -134,11 +133,8 @@ span { color: #3579F6; }
 	display: grid;
     margin-left: 1%;
     margin-right: 1%;
-    grid-row-gap: 20px;
-    grid-auto-rows: 1fr;
-    grid-column-gap: 20px;
-    grid-auto-columns: 1fr;
-    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+    grid-template-columns: 1fr;
 }
 
 .resume button {
@@ -189,7 +185,7 @@ span { color: #3579F6; }
 @media screen and (max-width: 1100px) {
     .gallery { grid-template-columns: 1fr; }
 
-    .card { max-width: 600px; }
+    .card { max-width: 90%; }
 }
 
 @media screen and (max-width: 630px) {
